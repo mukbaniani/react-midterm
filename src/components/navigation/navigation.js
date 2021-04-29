@@ -8,14 +8,14 @@ function Navigation() {
           <NavLink to="/" className="nav-link" exact>
             home page
           </NavLink>
-          <NavLink to="/todo" exact className="nav-link">
-            todo home
+          <NavLink to="/pagination" exact className="nav-link">
+            პაგინაცია
           </NavLink>
-          <NavLink to="/counter" exact className="nav-link">
-            counter
+          <NavLink to="/add-company" exact className="nav-link">
+            კომპანიის დამატება
           </NavLink>
-          <NavLink to="/profile" exact className="nav-link">
-            profile
+          <NavLink to="/companies" exact className="nav-link">
+            კომპანიები
           </NavLink>
           <NavLink to="/auth" exact className="nav-link">
             ავტორიზაცია

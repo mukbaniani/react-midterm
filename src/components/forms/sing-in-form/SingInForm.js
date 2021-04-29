@@ -1,15 +1,12 @@
 import { useForm } from 'react-hook-form';
-import { useHistory } from 'react-router';
 import { login } from '../../../services';
 
 function SingInForm() {
   const { register, handleSubmit } = useForm();
-  const history = useHistory();
 
   const onSubmit = async (data) => {
     const loggedIn = await login(data);
     localStorage.setItem('auth.token', JSON.stringify(loggedIn.token));
-    // history.replace('/profile');
   };
 
   return (
